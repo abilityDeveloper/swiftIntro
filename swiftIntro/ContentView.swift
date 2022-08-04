@@ -65,6 +65,7 @@ struct ContentView: View {
         setInfo()
         dictTypes()
         listInfo()
+        
     }
     
     struct Person {
