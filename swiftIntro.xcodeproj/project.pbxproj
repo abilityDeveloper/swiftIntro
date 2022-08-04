@@ -43,6 +43,7 @@
 		757B40A728997F9F00D38B72 /* swiftIntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B40A628997F9F00D38B72 /* swiftIntroTests.swift */; };
 		757B40B128997F9F00D38B72 /* swiftIntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B40B028997F9F00D38B72 /* swiftIntroUITests.swift */; };
 		757B40B328997F9F00D38B72 /* swiftIntroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B40B228997F9F00D38B72 /* swiftIntroUITestsLaunchTests.swift */; };
+		75950E7E289C6B3A007CE3F2 /* funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75950E7D289C6B3A007CE3F2 /* funcs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		757B40AC28997F9F00D38B72 /* swiftIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		757B40B028997F9F00D38B72 /* swiftIntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftIntroUITests.swift; sourceTree = "<group>"; };
 		757B40B228997F9F00D38B72 /* swiftIntroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftIntroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75950E7D289C6B3A007CE3F2 /* funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funcs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		757B408928997F9E00D38B72 = {
 			isa = PBXGroup;
 			children = (
+				75950E7D289C6B3A007CE3F2 /* funcs.swift */,
 				757B409428997F9E00D38B72 /* swiftIntro */,
 				757B40A528997F9F00D38B72 /* swiftIntroTests */,
 				757B40AF28997F9F00D38B72 /* swiftIntroUITests */,
@@ -401,6 +404,7 @@
 				71BA33D228999C5400CFFC86 /* FirebaseUser.swift in Sources */,
 				757B409628997F9E00D38B72 /* swiftIntroApp.swift in Sources */,
 				71BA33BD2899908A00CFFC86 /* Session.swift in Sources */,
+				75950E7E289C6B3A007CE3F2 /* funcs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

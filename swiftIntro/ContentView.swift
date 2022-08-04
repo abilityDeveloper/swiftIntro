@@ -87,12 +87,18 @@ struct ContentView: View {
     
     func listInfo() {
         var people: [Person] = []
-        var talon = Person(name: "Talon", year: 1993, state: "California", city: "Woodland")
+        var talon = Person(name: "Talon",
+                           year: 1993,
+                           state: "California",
+                           city: "Woodland")
         people.append(talon)
-        people.append(Person(name: "John", year: 1990, state: "Arkansas", city: "LittleRock"))
+        people.append(Person(name: "John",
+                             year: 1990,
+                             state: "Arkansas",
+                             city: "LittleRock"))
         people[1].nickname()
         let thing = people[0].birthday(yr: people[0].year)
-        }
+    }
 
     /*
      Muteable = Can be changed/mutated.
@@ -168,11 +174,9 @@ struct ContentView: View {
     
     func emptyArray() {
         var thisArray: [Int] = [] //Creates empty array. Must have a type.
-        
         thisArray.append(7) //adds a value to the end of the array
-        
         thisArray.insert(6, at: 0) //Inserts a value at a certain location in the array.
-                                   //In this case it will put 6 at index 0 so 6 will appear before 7.
+       //In this case it will put 6 at index 0 so 6 will appear before 7.
     }
     
     
@@ -243,11 +247,15 @@ struct ContentView: View {
     //    dictTypes() = dict
     //    for (key, value) in dict {
     //        print(dictTypes(), "\(key) : \(value)")
+    
+    ///Swift Data Types
     enum DataType {
-        case a(String), b(Int), c(Bool), d(Date)
+        case lobster
+        case none
     }
     
     func dictTypes() {
+        var enumType: DataType
         var basicSet: Set<Int> = []
         var tempDict: [String: Any] = [:]
         tempDict["String"]
@@ -264,24 +272,25 @@ struct ContentView: View {
             print("\(value)")
             
             switch value.value {
-                 case is String:
-                     print("String")
-                 case is Int:
-                     print("Int")
-                 case is Bool:
-                     print("Bool")
-                 case is Date:
-                     print("Date")
-                 case is Array<Any>:
-                     print("Array")
-                //case is Dictionary:
-                //    print("Dictionary")
-                //case is Set<  >:
-                 //    print("Set")
-                 case is Double:
-                     print("Double")
-                 default:
-                     print()
+                case is String:
+                    enumType = DataType.lobster
+                case is Int:
+                    enumType = DataType.lobster
+                case is Bool:
+                    enumType = DataType.lobster
+                case is Date:
+                    enumType = DataType.lobster
+                case is Array<Any>:
+                    enumType = DataType.lobster
+                case is Dictionary <String, Any>:
+                    enumType = DataType.lobster
+                case is Set <Int>:
+                    enumType = DataType.lobster
+                case is Double:
+                    enumType = DataType.lobster
+                default:
+                    enumType = DataType.none
+                    print()
             }
         }
             
@@ -292,10 +301,6 @@ struct ContentView: View {
         
         
         
-        /*
-         Loop through each ditionary in tempDict, and retrieve the value for each key.
-         Then create a swtich statement that print()s the type of each type contained.
-         */
         
         //switch value {
         //case is Bool:
@@ -313,8 +318,20 @@ struct ContentView: View {
      by using another variable or multiple variables("info", "info2" etc...)
      */
     
-    
-    
+        /*
+         Create the following function 'types' in a new File named: Funcs
+            - func donut(varName: <Type>) {}
+            - func(value1: <T>, value2: <T>) {}
+            - func(value1: <T>, value2: <T>) -> Set<String> {}
+            - func -> Tuple {}  //Maybe?
+            - func(value1: <T>, value2: <T>) ->  {}
+         
+            - How to create Error or Error type
+            - How to create function w/ completion block.
+            - func asyncFunc(varName: [String], completion: ((Bool, Error) -> Void)) {}
+            - recursive function.
+         */
+        
     
 }
 
