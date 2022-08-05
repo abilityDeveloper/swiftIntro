@@ -16,7 +16,7 @@ struct Trunk: View {
         
         Group {
 //            if (session.firebaseUser != nil) {
-                ContentView()
+                Menu()
             //} else {
                 #warning("Continue")
             //    Text("SignIn() view to be added here")
