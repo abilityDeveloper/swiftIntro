@@ -9,9 +9,83 @@ import Foundation
 import UIKit
 import SwiftUI
 
+struct ContentView: View {
+    
+    private let menuList: [MenuItem] = [
+    MenuItem(photo: "🥞", name: "Breakfast",
+              description: "Served from 6 - 11 daily."),
+    MenuItem(photo: "🍔", name: "Lunch",
+              description: "Served from 11 - 4  daily"),
+    MenuItem(photo: "🍝", name: "Dinner",
+              description: "Served from 4 - 11 daily."),
+    ]
+    
+    var body: some View {
+        NavigationView {
+            List(menuList) { menuItem in
+                NavigationLink(destination: DetailsView(menuItem: menuItem)) {
+                    HStack {
+                        MenuItemCircleView(menuItem: menuItem)
+                    Text(menuItem.name)
+                        .font(.headline)
+                    }
+                }
+            }
+        .navigationBarTitle("Menu")
+        }
+    }
+}
+
+struct DetailsView: View {
+    let menuItem: MenuItem
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                MenuItemCircleView(menuItem: menuItem)
+                    .padding()
+                Text(menuItem.name).font(.largeTitle)
+                Spacer()
+            }
+            Text(menuItem.description)
+                .padding(.top)
+            Spacer()
+        }
+        .padding()
+        .navigationBarTitle(Text(menuItem.name), displayMode: .inline)
+    }
+}
+
+struct MenuItemCircleView: View {
+    let menuItem: MenuItem
+    
+    var body: some View {
+        ZStack {
+            Text(menuItem.photo)
+                .shadow(radius: 3.0)
+                .font(.largeTitle)
+                .frame(width: 65, height: 85)
+                .overlay(
+                    Circle().stroke(Color.black, lineWidth: 3))
+        }
+    }
+}
+
+struct MenuItem: Identifiable {
+    let id = UUID()
+    let photo: String
+    let name: String
+    let description: String
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
 
 
 
+/*
 enum OrderError: Error {
     case invalidSelection
     case itemUnavailable
@@ -85,4 +159,4 @@ func sushiRoll() {
 func orderComplete(finished: () -> Void) {
     print("Thank You for Your Order!")
 }
-
+*/

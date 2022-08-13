@@ -5,6 +5,8 @@
 //  Created by Tallon Covell on 8/2/22.
 //
 
+/*
+
 import SwiftUI
 
 struct ContentView: View {
@@ -26,7 +28,7 @@ struct ContentView: View {
 
     
     
-    
+   
     
     //MARK: - Functions
     
@@ -338,6 +340,7 @@ struct ContentView: View {
     
 }
 
+    */
 
 
 
@@ -349,9 +352,11 @@ struct ContentView: View {
 
 
 //MARK: - Preview
+/*
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
         }
     }
 }
+*/

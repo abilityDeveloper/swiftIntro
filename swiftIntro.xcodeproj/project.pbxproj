@@ -38,7 +38,6 @@
 		71BA33D82899A76A00CFFC86 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA33D52899A76A00CFFC86 /* FirebaseAuth.swift */; };
 		753ED679289D5F15009F0366 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ED678289D5F15009F0366 /* Menu.swift */; };
 		753ED67B289D5FAC009F0366 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ED67A289D5FAC009F0366 /* FoodItem.swift */; };
-		753ED67E289D9695009F0366 /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753ED67D289D9695009F0366 /* MenuController.xib */; };
 		757B409628997F9E00D38B72 /* swiftIntroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B409528997F9E00D38B72 /* swiftIntroApp.swift */; };
 		757B409828997F9E00D38B72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B409728997F9E00D38B72 /* ContentView.swift */; };
 		757B409A28997F9F00D38B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757B409928997F9F00D38B72 /* Assets.xcassets */; };
@@ -47,7 +46,7 @@
 		757B40B128997F9F00D38B72 /* swiftIntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B40B028997F9F00D38B72 /* swiftIntroUITests.swift */; };
 		757B40B328997F9F00D38B72 /* swiftIntroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B40B228997F9F00D38B72 /* swiftIntroUITestsLaunchTests.swift */; };
 		75950E7E289C6B3A007CE3F2 /* funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75950E7D289C6B3A007CE3F2 /* funcs.swift */; };
-		75E900E6289DA84B0079CDBA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E900E5289DA84B0079CDBA /* SwiftUIView.swift */; };
+		8E221DB628A6DE7B00D0895D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E221DB528A6DE7B00D0895D /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +77,6 @@
 		71BA33D52899A76A00CFFC86 /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
 		753ED678289D5F15009F0366 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		753ED67A289D5FAC009F0366 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
-		753ED67D289D9695009F0366 /* MenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuController.xib; sourceTree = "<group>"; };
 		757B409228997F9E00D38B72 /* swiftIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757B409528997F9E00D38B72 /* swiftIntroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftIntroApp.swift; sourceTree = "<group>"; };
 		757B409728997F9E00D38B72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,8 +87,8 @@
 		757B40AC28997F9F00D38B72 /* swiftIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		757B40B028997F9F00D38B72 /* swiftIntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftIntroUITests.swift; sourceTree = "<group>"; };
 		757B40B228997F9F00D38B72 /* swiftIntroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftIntroUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		75950E7D289C6B3A007CE3F2 /* funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funcs.swift; sourceTree = "<group>"; };
-		75E900E5289DA84B0079CDBA /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		75950E7D289C6B3A007CE3F2 /* funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = funcs.swift; path = swiftIntro/funcs.swift; sourceTree = SOURCE_ROOT; };
+		8E221DB528A6DE7B00D0895D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,15 +204,6 @@
 			path = OrderUI;
 			sourceTree = "<group>";
 		};
-		753ED67C289D966C009F0366 /* RootViewController */ = {
-			isa = PBXGroup;
-			children = (
-				753ED67D289D9695009F0366 /* MenuController.xib */,
-				75E900E5289DA84B0079CDBA /* SwiftUIView.swift */,
-			);
-			path = RootViewController;
-			sourceTree = "<group>";
-		};
 		757B408928997F9E00D38B72 = {
 			isa = PBXGroup;
 			children = (
@@ -238,7 +227,7 @@
 		757B409428997F9E00D38B72 /* swiftIntro */ = {
 			isa = PBXGroup;
 			children = (
-				753ED67C289D966C009F0366 /* RootViewController */,
+				8E221DB428A6DE6300D0895D /* List and Navigation */,
 				71BA33B628998E3300CFFC86 /* Root */,
 				71BA33BB2899904600CFFC86 /* GlobalResources */,
 				71BA33B728998FDB00CFFC86 /* Scenes */,
@@ -278,6 +267,14 @@
 				757B40B228997F9F00D38B72 /* swiftIntroUITestsLaunchTests.swift */,
 			);
 			path = swiftIntroUITests;
+			sourceTree = "<group>";
+		};
+		8E221DB428A6DE6300D0895D /* List and Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8E221DB528A6DE7B00D0895D /* SwiftUIView.swift */,
+			);
+			path = "List and Navigation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,7 +391,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753ED67E289D9695009F0366 /* MenuController.xib in Resources */,
 				757B409D28997F9F00D38B72 /* Preview Assets.xcassets in Resources */,
 				757B409A28997F9F00D38B72 /* Assets.xcassets in Resources */,
 				71BA33A828998B4800CFFC86 /* GoogleService-Info.plist in Resources */,
@@ -424,7 +420,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E900E6289DA84B0079CDBA /* SwiftUIView.swift in Sources */,
 				71BA33D62899A76A00CFFC86 /* FirebaseAuth.swift in Sources */,
 				71BA33C62899924C00CFFC86 /* Trunk.swift in Sources */,
 				71BA33CE28999A0500CFFC86 /* Constants&Keys.swift in Sources */,
@@ -432,6 +427,7 @@
 				753ED67B289D5FAC009F0366 /* FoodItem.swift in Sources */,
 				757B409828997F9E00D38B72 /* ContentView.swift in Sources */,
 				753ED679289D5F15009F0366 /* Menu.swift in Sources */,
+				8E221DB628A6DE7B00D0895D /* SwiftUIView.swift in Sources */,
 				71BA33CA2899988800CFFC86 /* dbRef.swift in Sources */,
 				71BA33D228999C5400CFFC86 /* FirebaseUser.swift in Sources */,
 				757B409628997F9E00D38B72 /* swiftIntroApp.swift in Sources */,
